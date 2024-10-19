@@ -8,7 +8,7 @@ private:
     vector<int> table;
     int m;              // Size of the hash table
     int numElements;    // Number of elements in the hash table
-    static const double loadFactor_threshold = 0.8;  // Load factor threshold
+    static constexpr double loadFactor_threshold = 0.8;  // Load factor threshold
 
     // Hash function: h(k) = k % m
     int hashFunction(int key) {
